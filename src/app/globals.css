@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/variable/pretendardvariable.css");
 @import "tailwindcss";
 
 html {
@@ -6,8 +7,9 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  font-family: "Pretendard Variable", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: #fff7ed;
 }
 
 a {

@@ -3,7 +3,8 @@ import LinkCardList, { type LinkItem } from "@/components/LinkCardList";
 
 const profile = {
   name: "김개발",
-  bio: "세계 최강 바이브코더",
+  bio: "풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
+  avatarSrc: "https://placehold.co/150x150/orange/white",
 };
 
 const links: LinkItem[] = [
@@ -14,10 +15,10 @@ const links: LinkItem[] = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-sky-50 via-white to-white">
-      <div className="mx-auto flex w-full max-w-sm flex-col px-6 py-16 sm:py-20">
-        <ProfileHeader name={profile.name} bio={profile.bio} />
-        <div aria-hidden="true" className="mx-auto mt-10 h-px w-8 bg-sky-100" />
+    <main className="min-h-screen bg-gradient-to-br from-[#FFF9F0] via-[#FFF1E0] to-[#FFE2C4]">
+      <div className="mx-auto flex w-full max-w-sm flex-col px-7 py-20 sm:py-24">
+        <ProfileHeader name={profile.name} bio={profile.bio} avatarSrc={profile.avatarSrc} />
+        <div aria-hidden="true" className="mx-auto mt-10 h-px w-8 bg-orange-900/10" />
         <section className="mt-10">
           <LinkCardList links={links} />
         </section>
