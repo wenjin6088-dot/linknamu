@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import clientPromise from "@/lib/mongodb";
+import getMongoClient from "@/lib/mongodb";
 
 const DB_NAME = "linknamu";
 const COLLECTION = "linkClicks";
@@ -10,7 +10,7 @@ type ClickDoc = {
 };
 
 async function getCollection() {
-  const client = await clientPromise;
+  const client = await getMongoClient();
   return client.db(DB_NAME).collection<ClickDoc>(COLLECTION);
 }
 
